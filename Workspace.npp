@@ -1,0 +1,34 @@
+<NotepadPlus>
+    <Project name="ChrisWeb">
+        <Folder name="assets">
+            <Folder name="js">
+                <File name="assets\js\main.js" />
+            </Folder>
+            <Folder name="css">
+                <File name="assets\css\main.css" />
+            </Folder>
+        </Folder>
+        <Folder name="routes">
+            <File name="routes\aboutme.js" />
+            <File name="routes\contact.js" />
+            <File name="routes\index.js" />
+            <File name="routes\portfolio.js" />
+        </Folder>
+        <Folder name="views">
+            <File name="views\aboutme.jade" />
+            <File name="views\contact.jade" />
+            <File name="views\error.jade" />
+            <File name="views\footer.jade" />
+            <File name="views\header.jade" />
+            <File name="views\index.jade" />
+            <File name="views\layout.jade" />
+            <File name="views\portfolio.jade" />
+        </Folder>
+        <File name="app.js" />
+        <File name="config.json" />
+        <File name="package.json" />
+        <File name="Procfile" />
+        <File name="README.md" />
+        <File name="RunServer.bat" />
+    </Project>
+</NotepadPlus>

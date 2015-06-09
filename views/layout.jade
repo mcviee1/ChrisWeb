@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    //- Meta details
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no')
+    title= title
+    
+    //- CSS
+    if dev
+      link(rel='stylesheet', href='/css/bootstrap.css')
+      link(rel='stylesheet', href='/css/font-awesome.css')
+    else
+      link(rel='stylesheet', href='/css/bootstrap.min.css')
+      link(rel='stylesheet', href='/css/font-awesome.min.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic.css')
+    link(rel='stylesheet', href='/css/main.css' data-skrollr-stylesheet)
+  
+  body
+    //- Header
+    include header
+    //- Content
+    div.content
+      div.container
+        block content
+    //- Footer
+    include footer
+
+    //- Scripts
+    if dev
+      script(src='/js/jquery.js')
+      script(src='/js/bootstrap.js')
+      script(src='/js/skrollr.stylesheets.min.js')
+      script(src='/js/skrollr.js')
+      script(src='/js/waypoints.js')
+      script(src='/js/waypoints-sticky.js')
+    else
+      script(src='/js/jquery.min.js')
+      script(src='/js/bootstrap.min.js')
+      script(src='/js/skrollr.stylesheets.min.js')
+      script(src='/js/skrollr.min.js')
+      script(src='/js/waypoints.min.js')
+      script(src='/js/waypoints-sticky.min.js')
+    script(src='/js/main.js')
