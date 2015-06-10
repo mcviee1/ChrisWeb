@@ -1,9 +1,9 @@
 {
   "port": 80,
-  "title": "Christine McVie - Screenwriter",
+  "title": "Christine E McVie - Screenwriter",
   "icon": "/assets/images/script-icon-24.png",
   "logo": "/assets/images/script-icon-48.png",
-  "copyright": "2014 Christine McVie",
+  "copyright": "2015 Christine E McVie",
   "menu": [
     {"name": "Home", "href": "/"},
     {"name": "Portfolio", "href": "/Portfolio"},
@@ -11,9 +11,9 @@
     {"name": "Contact", "href": "/Contact"}    
   ],
   "contact": {
-    "name": "Christine McVie",
+    "name": "Christine E McVie",
     "address": "2 Rose Neuk, Bonnyrigg, Scotland",
-    "email": "cbonner1@hotmail.co.uk",
+    "email": "contact@christineemcvie.com",
     "phone": "+44 (0)7841 573 192",
     "defaultSubject": "Hello"
   },

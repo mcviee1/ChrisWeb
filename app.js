@@ -16,6 +16,9 @@ var aboutMe = require('./routes/aboutme');
 var contact = require('./routes/contact');
 
 var app = express();
+debug('env = ' + app.get('env'));
+app.locals.dev = ('development' == app.get('env'));
+debug('dev = ' + app.locals.dev);
 
 //Set application level variables
 app.locals.title = config.title;
@@ -24,17 +27,17 @@ app.locals.menu = config.menu;
 app.locals.contact = config.contact;
 app.locals.social = config.social;
 
-app.locals.dev = app.get('env') === 'development';
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-
 app.set('port', process.env.PORT || config.port);
+
+if (app.locals.dev) {
+  app.use(logger('dev'));
+}
 
 app.use(compression({ threshold: 512 }));
 app.use(favicon(__dirname + config.icon));
-app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
