@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node ./app"
+    "start": "set NODE_ENV=production& node ./app",
+    "debug": "set DEBUG=ChrisWeb& set NODE_ENV=development& node --debug ./app"
   },
   "dependencies": {
     "body-parser": "^1.10.0",

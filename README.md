@@ -5,17 +5,17 @@ Christine McVie Screenwriter Web Site
 
 ```sh
 $ npm install
-$ npm start
+$ npm run-script debug
 ```
-Your app should now be running on [localhost:80](http://localhost:80/).
+Your app should now be running on [localhost:80](http://localhost:80/) in debug mode.
 
 ## Deploying to Heroku
 ```
-$ git push heroku master
-$ heroku open
+$ git push
 ```
-
-Your app should now be running on [chrisweb.herokuapp.com:80](http://chrisweb.herokuapp.com/:80/).
+Once reviewed issue a pull request on github into master.
+Once accepted into master Heroku will be automatically notified triggering a rebuild and redeployment.
+Your app should now be running on [christineemcvie.herokuapp.com:80](http://christineemcvie.herokuapp.com/:80/).
 
 ## Documentation
 
