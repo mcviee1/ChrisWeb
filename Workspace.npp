@@ -29,6 +29,5 @@
         <File name="package.json" />
         <File name="Procfile" />
         <File name="README.md" />
-        <File name="RunServer.bat" />
     </Project>
 </NotepadPlus>
