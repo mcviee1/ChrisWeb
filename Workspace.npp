@@ -8,14 +8,17 @@
                 <File name="assets\css\main.css" />
             </Folder>
         </Folder>
+        <Folder name="data">
+            <File name="data\about.json" />
+        </Folder>
         <Folder name="routes">
-            <File name="routes\aboutme.js" />
+            <File name="routes\about.js" />
             <File name="routes\contact.js" />
             <File name="routes\index.js" />
             <File name="routes\portfolio.js" />
         </Folder>
         <Folder name="views">
-            <File name="views\aboutme.jade" />
+            <File name="views\about.jade" />
             <File name="views\contact.jade" />
             <File name="views\error.jade" />
             <File name="views\footer.jade" />

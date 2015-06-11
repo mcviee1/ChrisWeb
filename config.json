@@ -7,7 +7,7 @@
   "menu": [
     {"name": "Home", "href": "/"},
     {"name": "Portfolio", "href": "/Portfolio"},
-    {"name": "About Me", "href": "/AboutMe"},
+    {"name": "About Me", "href": "/About"},
     {"name": "Contact", "href": "/Contact"}    
   ],
   "contact": {

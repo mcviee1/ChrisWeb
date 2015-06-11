@@ -1,0 +1,20 @@
+{
+  "title": {
+    "text": "About Me",
+    "background-image": "",
+    "background-color": ""
+  },
+  "image": "/images/ProfilePic.png",
+  "paragraphs": [
+    {
+      "heading": "Christine E McVie",
+      "content": "TBC - About Me"
+    },{
+      "heading": "Screenwriting",
+      "content": "TBC - About ScreenWriting"
+    },{
+      "heading": "Personal",
+      "content": "TBC - Personal Stuff"
+    }   
+  ]
+}

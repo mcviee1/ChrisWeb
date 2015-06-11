@@ -4,14 +4,14 @@ div.header
       div.container
         ul.contact.pull-left
           li
-            a(href='mailto:#{contact.email}?subject=#{contact.defaultSubject}' target='_top') 
+            a(href='mailto:#{app.contact.email}?subject=#{app.contact.defaultSubject}' target='_top') 
               i.fa.fa-envelope-o
-              =contact.email
+              =app.contact.email
           li
             i.fa.fa-mobile.fa-lg
-            =contact.phone
+            =app.contact.phone
         ul.social.pull-right
-          for val in social
+          for val in app.social
             li
               a(href='#{val.href}' target='_top')
                 i.fa(class= val.faImage)
@@ -21,8 +21,8 @@ div.header
         div.container
           a.navbar-brand(href='/')
               img.logo(src='images/script-icon-48.png')
-              =title
+              =app.title
           ul.nav.navbar-nav.pull-right
-            for val in menu
+            for val in app.menu
               li
                 a(href='#{val.href}' target='_top')=val.name
