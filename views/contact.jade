@@ -1,5 +1,26 @@
 extends layout
 
+block css
+  link(rel='stylesheet', href='/css/contact.css')
+
 block content
-  h1 Contact
-  p Contact Me
+  div.section.animated.fadeInUp
+    h1= title.text
+  div.section.light-bg.animated.fadeInUp.contact
+    div.container.inner
+      div.row
+        h2 Contact Details
+        ul
+          li
+            i.fa.fa-map-marker
+            span.address
+              =contact.name 
+              br
+              =contact.address
+          li 
+            a(href='mailto:#{contact.email}?subject=#{contact.defaultSubject}' target='_top')
+              i.fa.fa-envelope-o
+              =contact.email
+          li
+            i.fa.fa-mobile.fa-lg
+            =contact.phone

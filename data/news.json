@@ -1,0 +1,19 @@
+{
+  "title": {
+    "text": "News",
+    "background-image": "",
+    "background-color": ""
+  },
+  "news": [
+    {
+      "heading": "Under Construction",
+      "image": "/images/UnderConstruction.png",
+      "content": "Available Soon"
+    },
+    {
+      "heading": "Edinburgh International Film Festival - 2015",
+      "image": "",
+      "content": "I will be attending the EIFF 2015 as an industry delegate."
+    }    
+  ]
+}

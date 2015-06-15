@@ -1,5 +1,18 @@
 extends layout
 
 block content
-  h1= app.title
-  p Welcome to #{app.title}
+  div.section.animated.fadeInUp
+    h1= app.title
+    p= app.welcome
+  div.section.animated.fadeInUp
+    h1= title.text
+  div.section.light-bg.animated.fadeInUp
+    div.container.inner
+      div.row
+        for val in news
+          div.col-md-4
+            if (val.image)
+              img(src='#{val.image}')
+          div.col-md-8
+            h2= val.heading
+            p= val.content

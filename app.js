@@ -10,6 +10,7 @@ var compression = require('compression');
 var minify = require('express-minify');
 
 var config = require('./config.json');
+var contactData = require('./data/contact.json');
 var index = require('./routes/index');
 var portfolio = require('./routes/portfolio');
 var about = require('./routes/about');
@@ -20,10 +21,11 @@ var app = express();
 // Set application level variables
 app.locals.app = {};
 app.locals.app.title = config.title;
+app.locals.app.welcome = config.welcome;
 app.locals.app.copyright = config.copyright;
 app.locals.app.menu = config.menu;
-app.locals.app.contact = config.contact;
-app.locals.app.social = config.social;
+app.locals.app.contact = contactData.contact;
+app.locals.app.social = contactData.social;
 
 // Setup Development Mode
 debug('env = ' + app.get('env'));
