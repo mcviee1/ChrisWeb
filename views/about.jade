@@ -1,15 +1,17 @@
 extends layout
 
 block content
-  div.section.animated.fadeInUp
-    h1= title.text
-  div.section.light-bg.animated.fadeInUp
-    div.container.inner
-      div.row
-        div.col-md-4
-          img(src='#{image}')
-        div.col-md-8
-          for val in paragraphs
-            div.paragraph
-              h2= val.heading
-              p= val.content
+  div.container
+    div.row.section.animated.fadeInUp
+      div.col-sm-12
+        h1= title.text
+    div.row.section.light-bg.animated.fadeInUp
+      div.container.inner
+        div.row
+          div.col-sm-4
+            img.img-thumbnail.center-block.img-responsive(src='#{image}')
+          div.col-sm-8
+            for val in paragraphs
+              div.paragraph
+                h2= val.heading
+                p= val.content

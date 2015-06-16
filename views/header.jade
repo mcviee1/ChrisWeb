@@ -21,7 +21,8 @@ div.header
         div.container
           a.navbar-brand(href='/')
               img.logo(src='images/script-icon-48.png')
-              =app.title
+              span.title
+                =app.title
           ul.nav.navbar-nav.pull-right
             for val in app.menu
               li

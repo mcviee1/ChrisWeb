@@ -2,13 +2,14 @@ extends layout
 
 block css
   link(rel='stylesheet', href='/css/contact.css')
-
+  
 block content
-  div.section.animated.fadeInUp
-    h1= title.text
-  div.section.light-bg.animated.fadeInUp.contact
-    div.container.inner
-      div.row
+  div.container
+    div.row.section.animated.fadeInUp
+      div.col-sm-12
+        h1= title.text
+    div.row.section.light-bg.animated.fadeInUp.contact
+      div.col-sm-12
         h2 Contact Details
         ul
           li
@@ -24,3 +25,8 @@ block content
           li
             i.fa.fa-mobile.fa-lg
             =contact.phone
+          for val in social
+            li
+              a(href='#{val.href}' target='_top')
+                i.fa(class= val.faImage style='color:#{val.color};')
+                =val.text

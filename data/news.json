@@ -7,12 +7,14 @@
   "news": [
     {
       "heading": "Under Construction",
+      "date": "Ongoing",
       "image": "/images/UnderConstruction.png",
-      "content": "Available Soon"
+      "content": "My site is currently under construction. Please bear with me while I dig deeper into my imagination."
     },
     {
       "heading": "Edinburgh International Film Festival - 2015",
-      "image": "",
+      "date": "16 June 2015",
+      "image": "/images/eifflogo-2015.png",
       "content": "I will be attending the EIFF 2015 as an industry delegate."
     }    
   ]

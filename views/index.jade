@@ -1,18 +1,20 @@
 extends layout
 
 block content
-  div.section.animated.fadeInUp
-    h1= app.title
-    p= app.welcome
-  div.section.animated.fadeInUp
-    h1= title.text
-  div.section.light-bg.animated.fadeInUp
-    div.container.inner
-      div.row
+  div.container
+    div.row.section.animated.fadeInUp
+      div.col-sm-12
+        h1= app.title
+        p= app.welcome
+    div.row.section.light-bg.animated.fadeInUp
+      div.col-sm-12
+        h1= title.text
         for val in news
-          div.col-md-4
-            if (val.image)
-              img(src='#{val.image}')
-          div.col-md-8
-            h2= val.heading
-            p= val.content
+          div.row      
+            div.col-sm-3
+              if (val.image)
+                img.img-thumbnail.center-block(src='#{val.image}')
+            div.col-sm-9
+              h2= val.heading
+              h4.subHeading= val.date
+              p= val.content
