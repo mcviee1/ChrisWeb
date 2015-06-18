@@ -15,7 +15,7 @@ $ git push
 ```
 Once reviewed issue a pull request on github into master.
 Once accepted into master Heroku will be automatically notified triggering a rebuild and redeployment.
-Your app should now be running on [christineemcvie.herokuapp.com:80](http://christineemcvie.herokuapp.com/:80/).
+Your app should now be running on [christineemcvie.com:80](http://christineemcvie.com/:80/).
 
 ## Documentation
 

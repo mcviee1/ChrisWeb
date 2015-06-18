@@ -1,0 +1,14 @@
+{
+  "title": {
+    "text": "Portfolio",
+    "background-image": "",
+    "background-color": ""
+  },
+  "projects": [
+    {
+      "heading": "Under Construction",
+      "image": "/images/UnderConstruction.png",
+      "content": "Digging into my imagination as fast as I can."
+    }   
+  ]
+}

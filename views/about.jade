@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  div.container
+    div.row.section.animated.fadeInUp
+      div.col-sm-12
+        h1= title.text
+    div.row.section.animated.fadeInUp
+      div.col-sm-12
+        div.row.article.light-bg
+          div.col-sm-4
+            img.img-thumbnail.center-block.img-responsive(src='#{image}')
+          div.col-sm-8
+            for val in paragraphs
+              div.paragraph
+                if val.heading
+                  h2.sidelines
+                    span= val.heading
+                p= val.content

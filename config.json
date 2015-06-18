@@ -1,24 +1,14 @@
 {
   "port": 80,
   "title": "Christine E McVie - Screenwriter",
+  "welcome": "Hello, my name is Christine McVie. I write for film and television.  I make things happen with my mind, a lot like Carrie but with less blood...",
   "icon": "/assets/images/script-icon-24.png",
   "logo": "/assets/images/script-icon-48.png",
   "copyright": "2015 Christine E McVie",
   "menu": [
     {"name": "Home", "href": "/"},
     {"name": "Portfolio", "href": "/Portfolio"},
-    {"name": "About Me", "href": "/AboutMe"},
+    {"name": "About Me", "href": "/About"},
     {"name": "Contact", "href": "/Contact"}    
-  ],
-  "contact": {
-    "name": "Christine E McVie",
-    "address": "2 Rose Neuk, Bonnyrigg, Scotland",
-    "email": "contact@christineemcvie.com",
-    "phone": "+44 (0)7841 573 192",
-    "defaultSubject": "Hello"
-  },
-  "social": [
-    {"name": "Twitter", "href": "http://www.twitter.com/CEMcVie", "faImage": "fa-twitter", "color": "#2FBBED"},
-    {"name": "Facebook", "href": "http://www.facebook.com/ChristineEMcVie", "faImage": "fa-facebook", "color": "#4668B3"}
   ]
 }

@@ -1,0 +1,18 @@
+﻿/* Contact Page */
+.content .contact ul {
+  list-style: none;
+}
+.content .contact  i {
+  margin-right: 5px;
+}
+.content .contact span.address {
+  display: inline-flex;
+}
+.content .contact a {
+  color: inherit;
+}
+.content .contact a:hover,
+.content .contact a:focus {
+  color: #1ABB9C;
+  text-decoration: none;
+}

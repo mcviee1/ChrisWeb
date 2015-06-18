@@ -1,0 +1,26 @@
+{
+  "title": {
+    "text": "About Me",
+    "background-image": "",
+    "background-color": ""
+  },
+  "image": "/images/ProfilePic.png",
+  "paragraphs": [
+    {
+      "heading": "About Christine",
+      "content": "Having started out life with a love for watching films and a view to treading the boards, I found my passion lay with writing and creating new worlds. Plus my feet were too big and clumsy for said boards. I spent the next decade reading and researching as much as I could, while working in the events and hospitality industry. Boy could I tell a story or two. And so I did..."
+    },{
+      "heading": "",
+      "content": "I finally took the plunge and changed my career. In September 2011 I enrolled in a screenwriting course at Edinburgh University and everything snowballed from there. I graduated from Screen Academy Scotland, Edinburgh Napier University in 2012 with an MA in Screenwriting."
+    },{
+      "heading": "",
+      "content": "Since then I have reached the final stages of prestigious screenwriting competitions including the PAGE International Screenwriting Contest, Screencraft's shorts and comedy categories, and the Hollywood Screenplay Contest. I was selected to take part in the ENGAGE European training and development programme for emerging directors, writers and producers. I have successfully pitched a feature project at the Edinburgh International Film Festival for Cascade Media's writers couch initiative."
+    },{
+      "heading": "",
+      "content": "When I'm not furiously typing away on the computer or visiting the cinema, I can be found eating sushi, making sushi (badly) or baking cookies (very well or so I'm told)."
+    },{
+      "heading": "",
+      "content": "If you would like to get in touch with me about anything please visit the contact section."
+    }   
+  ]
+}

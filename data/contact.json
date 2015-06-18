@@ -1,0 +1,39 @@
+{
+  "title": {
+    "text": "Contact",
+    "background-image": "",
+    "background-color": ""
+  },
+  "contact": {
+    "heading": "Contact Details",
+    "name": "Christine E McVie",
+    "address": "2 Rose Neuk, Bonnyrigg, Scotland",
+    "email": "contact@christineemcvie.com",
+    "phone": "+44 (0)7841 573 192"    
+  },
+  "email": {
+    "heading": "Send a Message",
+    "defaultSubject": "Hello",
+    "smtpServer": "smtp.live.com",
+    "smtpPort": "25",
+    "smtpUseSecure": "true",
+    "smtpUsername": "cbonner1@hotmail.co.uk",
+    "smtpPassword": "dubenkoer1"
+  },
+  "social": [
+    {
+      "name": "Twitter",
+      "text": "@CEMcVie",
+      "href": "http://www.twitter.com/CEMcVie",
+      "faImage": "fa-twitter",
+      "color": "#2FBBED"
+    },
+    { 
+      "name": "Facebook",
+      "text": "ChristineEMcVie",
+      "href": "http://www.facebook.com/ChristineEMcVie",
+      "faImage": "fa-facebook",
+      "color": "#4668B3"
+    }
+  ]
+}

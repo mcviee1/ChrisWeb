@@ -10,58 +10,59 @@ var compression = require('compression');
 var minify = require('express-minify');
 
 var config = require('./config.json');
-var index = require('./routes/index');
-var portfolio = require('./routes/portfolio');
-var aboutMe = require('./routes/aboutme');
-var contact = require('./routes/contact');
+var contactData = require('./data/contact.json');
 
 var app = express();
+
+// Set application level variables
+app.locals.app = {};
+app.locals.app.title = config.title;
+app.locals.app.welcome = config.welcome;
+app.locals.app.copyright = config.copyright;
+app.locals.app.menu = config.menu;
+app.locals.app.contact = contactData.contact;
+app.locals.app.contact.defaultSubject = contactData.email.defaultSubject;
+app.locals.app.social = contactData.social;
+
+// Setup Development Mode
 debug('env = ' + app.get('env'));
-app.locals.dev = ('development' == app.get('env'));
-debug('dev = ' + app.locals.dev);
+app.locals.app.dev = ('development' == app.get('env'));
+debug('dev = ' + app.locals.app.dev);
+if (app.locals.app.dev) {
+  app.use(logger('dev'));
+}
 
-//Set application level variables
-app.locals.title = config.title;
-app.locals.copyright = config.copyright;
-app.locals.menu = config.menu;
-app.locals.contact = config.contact;
-app.locals.social = config.social;
-
-// view engine setup
+// View engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.set('port', process.env.PORT || config.port);
 
-if (app.locals.dev) {
-  app.use(logger('dev'));
-}
-
-app.use(compression({ threshold: 512 }));
+app.use(compression({ threshold: 256 }));
 app.use(favicon(__dirname + config.icon));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(minify({cache: path.join(__dirname, 'cache')}));
+if (!app.locals.app.dev) {
+  app.use(minify({cache: path.join(__dirname, 'cache')}));
+}
 app.use(express.static(path.join(__dirname, 'assets')));
 
 // Setup Routing
-app.use('/', index);
-app.use('/portfolio', portfolio);
-app.use('/aboutme', aboutMe);
-app.use('/contact', contact);
+app.use('/', require('./routes/index'));
+app.use('/portfolio', require('./routes/portfolio'));
+app.use('/about', require('./routes/about'));
+app.use('/contact', require('./routes/contact'));
 
-// catch 404 and forward to error handler
+// Catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
     next(err);
 });
 
-// error handlers
-
-// development error handler
-// will print stacktrace
-if (app.locals.dev) {
+// Development error handler
+// Will print stacktrace
+if (app.locals.app.dev) {
     app.use(function(err, req, res, next) {
         res.status(err.status || 500);
         res.render('error', {
@@ -71,8 +72,8 @@ if (app.locals.dev) {
     });
 }
 
-// production error handler
-// no stacktraces leaked to user
+// Production error handler
+// No stacktraces leaked to user
 app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
@@ -81,7 +82,7 @@ app.use(function(err, req, res, next) {
     });
 });
 
-//Start the server
+// Start the server
 var server = app.listen(app.get('port'), function() {
   debug('Express server listening on port ' + server.address().port);
 });

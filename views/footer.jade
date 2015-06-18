@@ -1,7 +1,7 @@
 div.footer
-    div.container.inner
-      p.pull-left &copy; #{copyright}. All rights reserved.
+    div.container
+      p.pull-left &copy; #{app.copyright}. All rights reserved.
         ul.footer-menu.pull-right
-          for val in menu
+          for val in app.menu
             li
               a(href='#{val.href}' target='_top')= val.name

@@ -1,5 +1,56 @@
 extends layout
 
+block css
+  link(rel='stylesheet', href='/css/contact.css')
+  
 block content
-  h1 Contact
-  p Contact Me
+  div.container
+    div.row.section.animated.fadeInUp
+      div.col-sm-12
+        h1= title.text
+    div.row.section.animated.fadeInUp.contact
+      div.col-sm-12
+        div.row
+          div.col-sm-6
+            div.row.article.light-bg
+              div.col-sm-12
+                h2.sidelines
+                  span= email.heading
+                form(method='post')
+                  div.row
+                    div.col-sm-6
+                      input.form-control(type='text' name='senderName' placeholder='Name (Required)')
+                  div.row
+                    div.col-sm-6
+                      input.form-control(type='email' name='senderEmail' placeholder='Email (Required)')
+                  div.row
+                    div.col-sm-6
+                      input.form-control(type='text' name='subject' placeholder='Subject')
+                  div.row
+                    div.col-sm-12
+                      textarea.form-control(name='message' placeholder='Enter your message...' rows='5')
+                  button.btn.btn-primary(type='submit') Send Message
+          div.col-sm-5.col-sm-offset-1
+            div.row.article.light-bg
+              div.col-sm-12
+                h2.sidelines
+                  span= contact.heading
+                ul
+                  li
+                    i.fa.fa-map-marker
+                    span.address
+                      =contact.name 
+                      br
+                      =contact.address
+                  li 
+                    a(href='mailto:#{contact.email}?subject=#{email.defaultSubject}' target='_top')
+                      i.fa.fa-envelope-o
+                      =contact.email
+                  li
+                    i.fa.fa-mobile.fa-lg
+                    =contact.phone
+                  for val in social
+                    li
+                      a(href='#{val.href}' target='_top')
+                        i.fa(class= val.faImage style='color:#{val.color};')
+                        =val.text
