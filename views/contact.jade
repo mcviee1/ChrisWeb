@@ -8,25 +8,33 @@ block content
     div.row.section.animated.fadeInUp
       div.col-sm-12
         h1= title.text
-    div.row.section.light-bg.animated.fadeInUp.contact
+    div.row.section.animated.fadeInUp.contact
       div.col-sm-12
-        h2 Contact Details
-        ul
-          li
-            i.fa.fa-map-marker
-            span.address
-              =contact.name 
-              br
-              =contact.address
-          li 
-            a(href='mailto:#{contact.email}?subject=#{contact.defaultSubject}' target='_top')
-              i.fa.fa-envelope-o
-              =contact.email
-          li
-            i.fa.fa-mobile.fa-lg
-            =contact.phone
-          for val in social
-            li
-              a(href='#{val.href}' target='_top')
-                i.fa(class= val.faImage style='color:#{val.color};')
-                =val.text
+        div.row
+          div.col-sm-6
+            div.row.article.light-bg
+              div.col-sm-12
+          div.col-sm-5.col-sm-offset-1
+            div.row.article.light-bg
+              div.col-sm-12
+                h2.sidelines
+                    span= contact.heading
+                ul
+                  li
+                    i.fa.fa-map-marker
+                    span.address
+                      =contact.name 
+                      br
+                      =contact.address
+                  li 
+                    a(href='mailto:#{contact.email}?subject=#{contact.defaultSubject}' target='_top')
+                      i.fa.fa-envelope-o
+                      =contact.email
+                  li
+                    i.fa.fa-mobile.fa-lg
+                    =contact.phone
+                  for val in social
+                    li
+                      a(href='#{val.href}' target='_top')
+                        i.fa(class= val.faImage style='color:#{val.color};')
+                        =val.text

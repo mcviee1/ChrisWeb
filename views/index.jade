@@ -6,15 +6,16 @@ block content
       div.col-sm-12
         h1= app.title
         p= app.welcome
-    div.row.section.light-bg.animated.fadeInUp
+    div.row.section.animated.fadeInUp
       div.col-sm-12
         h1= title.text
         for val in news
-          div.row      
+          div.row.light-bg.article.animated.fadeInUp      
             div.col-sm-3
               if (val.image)
-                img.img-thumbnail.center-block(src='#{val.image}')
+                img.img-thumbnail.center-block.img-responsive(src='#{val.image}')
             div.col-sm-9
-              h2= val.heading
+              h2.sidelines
+                span= val.heading
               h4.subHeading= val.date
               p= val.content

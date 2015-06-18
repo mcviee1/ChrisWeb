@@ -3,14 +3,16 @@ extends layout
 block content
   div.container
     div.row.section.animated.fadeInUp
-      h1= title.text
-    div.row.section.light-bg.animated.fadeInUp
+      div.col-sm-12
+        h1= title.text
+    div.row.section.animated.fadeInUp
       div.col-sm-12
         for val in projects
-          div.row
+          div.row.light-bg.article
             div.col-sm-3
               if (val.image)
-                img.img-thumbnail.center-block(src='#{val.image}')
+                img.img-thumbnail.center-block.img-responsive(src='#{val.image}')
             div.col-sm-9
-              h2= val.heading
+              h2.sidelines
+                span= val.heading
               p= val.content

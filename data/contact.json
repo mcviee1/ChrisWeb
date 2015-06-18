@@ -1,10 +1,11 @@
 {
   "title": {
-    "text": "Contact Me",
+    "text": "Contact",
     "background-image": "",
     "background-color": ""
   },
   "contact": {
+    "heading": "Contact Details",
     "name": "Christine E McVie",
     "address": "2 Rose Neuk, Bonnyrigg, Scotland",
     "email": "contact@christineemcvie.com",
