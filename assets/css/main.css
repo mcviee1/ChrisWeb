@@ -44,14 +44,15 @@ h5.sidelines, h6.sidelines {
   padding: 0 .5em;
   margin: 0 50px; 
 }
-.light-bg {
+input.form-control, textarea.form-control {
+  border-color: #73879C;
+  margin-bottom: 10px;
+}
+.light-bg, .light-bg .sidelines span, .light-bg input.form-control, .light-bg textarea.form-control {
   background: #F5F7FA;
 }
 .light-bg .sidelines {
   border-color: #BCC7D1;
-}
-.light-bg .sidelines span {
-  background: #F2F5F7;
 }
 .article {
   margin-top: 10px;

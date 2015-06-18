@@ -11,10 +11,6 @@ var minify = require('express-minify');
 
 var config = require('./config.json');
 var contactData = require('./data/contact.json');
-var index = require('./routes/index');
-var portfolio = require('./routes/portfolio');
-var about = require('./routes/about');
-var contact = require('./routes/contact');
 
 var app = express();
 
@@ -25,6 +21,7 @@ app.locals.app.welcome = config.welcome;
 app.locals.app.copyright = config.copyright;
 app.locals.app.menu = config.menu;
 app.locals.app.contact = contactData.contact;
+app.locals.app.contact.defaultSubject = contactData.email.defaultSubject;
 app.locals.app.social = contactData.social;
 
 // Setup Development Mode
@@ -51,10 +48,10 @@ if (!app.locals.app.dev) {
 app.use(express.static(path.join(__dirname, 'assets')));
 
 // Setup Routing
-app.use('/', index);
-app.use('/portfolio', portfolio);
-app.use('/about', about);
-app.use('/contact', contact);
+app.use('/', require('./routes/index'));
+app.use('/portfolio', require('./routes/portfolio'));
+app.use('/about', require('./routes/about'));
+app.use('/contact', require('./routes/contact'));
 
 // Catch 404 and forward to error handler
 app.use(function(req, res, next) {
