@@ -17,8 +17,8 @@
     "smtpServer": "smtp.live.com",
     "smtpPort": "25",
     "smtpUseSecure": "true",
-    "smtpUsername": "cbonner1@hotmail.co.uk",
-    "smtpPassword": "dubenkoer1"
+    "smtpUsername": "",
+    "smtpPassword": ""
   },
   "social": [
     {
