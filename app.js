@@ -37,6 +37,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.set('port', process.env.PORT || config.port);
 
+app.get('/robots.txt', function(req, res) {
+  res.sendfile('robots.txt',{root: __dirname});
+});
+
 app.use(compression({ threshold: 256 }));
 app.use(favicon(__dirname + config.icon));
 app.use(bodyParser.json());
