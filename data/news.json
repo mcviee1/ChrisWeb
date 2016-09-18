@@ -6,16 +6,34 @@
   },
   "news": [
     {
-      "heading": "Under Construction",
-      "date": "Ongoing",
-      "image": "/images/UnderConstruction.png",
-      "content": "My site is currently under construction. Please bear with me while I dig deeper into my imagination."
+      "heading": "Austin Film Festival",
+      "date": "13-20 October 2016",
+      "image": "/images/AustinFilmFestival-2016.png",
+      "content": "TBC.<br>See <a href='https://austinfilmfestival.com/'>Austin Film Festival</a> for details of the festival."
+    },
+	{
+      "heading": "PAGE Awards",
+      "date": "September 2016",
+      "image": "/images/PAGE-2016.png",
+      "content": "TBC.<br>See <a href='https://pageawards.com/past-winners/2016-winners/2016-finalists/'>2016 PAGE Awards Finalists</a> for the full list."
+    },
+	{
+      "heading": "Austin Film Festival Screenplay Competition",
+      "date": "September 2016",
+      "image": "/images/AustinFilmFestival-2016.png",
+      "content": "TBC.<br>See <a href='https://austinfilmfestival.com/submit/screenplay-and-teleplay-submissions/2016-sf-2rounders/'>Screenplay Competition Semifinalists and Second Rounders</a> for the full list."
+    },
+	{
+      "heading": "Tracking Board Launch Pad",
+      "date": "August 2016",
+      "image": "/images/TrackingBoard-2016.png",
+      "content": "TBC.<br>See <a href='https://tblaunchpad.com/contests/5'>2016 Launch Pad Pilot Competition</a> for more details."
     },
     {
-      "heading": "Edinburgh International Film Festival - 2015",
+      "heading": "Edinburgh International Film Festival",
       "date": "16 June 2015",
-      "image": "/images/eifflogo-2015.png",
-      "content": "I'm attending the EIFF 2015 as an industry delegate. I'll be co-hosting a series of podcasts reviewing the films the EIFF 2015 has to offer and we'll be chatting to industry guests about their film-making experiences. Check out our facebook page at <a href='https://www.facebook.com/pages/Film-Club-sc/924719664218199'>Film Club sc</a> and if you are here as well please come and say hello."
+      "image": "/images/EIFFLogo-2015.png",
+      "content": "I'm attending the EIFF 2015 as an industry delegate. I'll be co-hosting a series of podcasts reviewing the films the EIFF 2015 has to offer and we'll be chatting to industry guests about their film-making experiences.<br>Check out our facebook page at <a href='https://www.facebook.com/pages/Film-Club-sc/924719664218199'>Film Club sc</a> and if you are here as well please come and say hello."
     }    
   ]
 }

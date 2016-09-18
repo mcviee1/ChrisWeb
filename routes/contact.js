@@ -10,13 +10,15 @@ var form = require("express-form"),
 
 // create reusable transport object using SMTP transport 
 var mailTransport = nodemailer.createTransport({
-    host: data.email.smtpServer,
-    port: data.email.smtpPort,
-    secure: data.email.smtpUseSecure,
-    auth: {
-        user: data.email.smtpUsername,
-        pass: data.email.smtpPassword
-    }
+    name: 'christineemcvie.com',
+    direct: true
+    //host: data.email.smtpServer,
+    //port: data.email.smtpPort,
+    //secure: data.email.smtpUseSecure,
+    //auth: {
+    //    user: data.email.smtpUsername,
+    //    pass: data.email.smtpPassword
+    //}
 });
 
 /* GET Contact page. */

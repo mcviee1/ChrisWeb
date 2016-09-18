@@ -20,7 +20,7 @@
       "content": "When I'm not furiously typing away on the computer or visiting the cinema, I can be found eating sushi, making sushi (badly) or baking cookies (very well or so I'm told)."
     },{
       "heading": "",
-      "content": "If you would like to get in touch with me about anything please visit the contact section."
+      "content": "If you would like to get in touch with me about anything please visit the <a href='/Contact'>contact section</a>."
     }   
   ]
 }

@@ -1,10 +1,10 @@
 {
   "port": 80,
-  "title": "Christine E McVie - Screenwriter",
+  "title": "Christine McVie - Screenwriter",
   "welcome": "Hello, my name is Christine McVie. I write for film and television.  I make things happen with my mind, a lot like Carrie but with less blood...",
   "icon": "/assets/images/script-icon-24.png",
   "logo": "/assets/images/script-icon-48.png",
-  "copyright": "2015 Christine E McVie",
+  "copyright": "2015 Christine McVie",
   "menu": [
     {"name": "Home", "href": "/"},
     {"name": "Portfolio", "href": "/Portfolio"},
