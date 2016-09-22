@@ -1,21 +1,63 @@
 {
-  "title": {
-    "text": "News",
-    "background-image": "",
-    "background-color": ""
-  },
-  "news": [
-    {
-      "heading": "Under Construction",
-      "date": "Ongoing",
-      "image": "/images/UnderConstruction.png",
-      "content": "My site is currently under construction. Please bear with me while I dig deeper into my imagination."
+    "title": {
+        "text": "News",
+        "background-image": "",
+        "background-color": ""
     },
-    {
-      "heading": "Edinburgh International Film Festival - 2015",
-      "date": "16 June 2015",
-      "image": "/images/eifflogo-2015.png",
-      "content": "I'm attending the EIFF 2015 as an industry delegate. I'll be co-hosting a series of podcasts reviewing the films the EIFF 2015 has to offer and we'll be chatting to industry guests about their film-making experiences. Check out our facebook page at <a href='https://www.facebook.com/pages/Film-Club-sc/924719664218199'>Film Club sc</a> and if you are here as well please come and say hello."
-    }    
-  ]
+    "news": [
+        {
+            "heading": "Austin Film Festival",
+            "date": "13-20 October 2016",
+            "image": "/images/AustinFilmFestival-2016.png",
+            "content": "I will be attending this years Austin Film Festival.<br>See <a href='https://austinfilmfestival.com'>Austin Film Festival</a> for details of the festival."
+        },
+        {
+            "heading": "PAGE Awards",
+            "date": "15th September 2016",
+            "image": "/images/PAGE-2016.png",
+            "content": "Finalist in the TV Drama Pilot category with script 'Frankie saves the World'.<br>See <a href='https://pageawards.com/past-winners/2016-winners/2016-finalists'>2016 PAGE Awards Finalists</a> for the full list."
+        },
+        {
+            "heading": "Austin Film Festival Screenplay Competition",
+            "date": "10 September 2016",
+            "image": "/images/AustinFilmFestival-2016.png",
+            "content": "TBC.<br>See <a href='https://austinfilmfestival.com/submit/screenplay-and-teleplay-submissions/2016-sf-2rounders'>Screenplay Competition Semifinalists and Second Rounders</a> for the full list."
+        },
+        {
+            "heading": "Tracking Board Launch Pad",
+            "date": "20 July 2016",
+            "image": "/images/TrackingBoard-2016.png",
+            "content": "Semi-Finalist with pilot script 'Frankie saves the World'.<br>See <a href='https://tblaunchpad.com/contests/5'>2016 Launch Pad Pilot Competition</a> for more details."
+        },
+        {
+            "heading": "Stage 32 Happy Writers TV Fellowship",
+            "date": "10th Febraury 2016",
+            "image": "/images/Stage32-TVWritersFellowship.webp",
+            "content": "Semi-Finalist with pilot script 'Mindwalkers'.<br>See <a href='https://www.stage32.com/happy-writers/contests/Stage-32-Happy-Writers-TV-Writers-Fellowship-2'>Stage 32 Happy Writers TV Writers Fellowship</a> for more details."
+        },
+        {
+            "heading": "Edinburgh International Film Festival",
+            "date": "16 June 2015",
+            "image": "/images/EIFFLogo-2015.png",
+            "content": "I'm attending the EIFF 2015 as an industry delegate. I'll be co-hosting a series of podcasts reviewing the films the EIFF 2015 has to offer and we'll be chatting to industry guests about their film-making experiences.<br>Check out our facebook page at <a href='https://www.facebook.com/pages/Film-Club-sc/924719664218199'>Film Club sc</a> and if you are here as well please come and say hello."
+        },
+        {
+            "heading": "Screencraft Comedy Script Contest",
+            "date": "5th September 2014",
+            "image": "/images/Screencraft-Comedy-2014.jpg",
+            "content": "Semi-Finalist with comedy script 'It started with a Cat'..<br>See <a href='https://screencraft.org/2014/09/05/2014-screencraft-comedy-script-contest-semi-finalists-announced'>2014 ScreenCraft Comedy Script Contest Semi-Finalists Announced</a> for the full list."
+        },
+        {
+            "heading": "PAGE Awards",
+            "date": "15th July 2013",
+            "image": "/images/PAGE-2013.png",
+            "content": "Quarter-finalist with feature drama script 'Fractured Hearts'.<br>See <a href='https://pageawards.com/past-winners/2013-winners/2013-quarter-finalists'>2013 PAGE Awards Quarter-Finalists</a> for the full list."
+        },
+        {
+            "heading": "PAGE Awards",
+            "date": "15th September 2012",
+            "image": "/images/PAGE-2012.png",
+            "content": "Finalist with short screenplay 'Exposed'.<br>See <a href='https://pageawards.com/past-winners/2012-winners/2012-finalists'>2012 PAGE Awards Finalists</a> for the full list."
+        }
+    ]
 }

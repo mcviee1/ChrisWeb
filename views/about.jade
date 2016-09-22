@@ -1,5 +1,8 @@
 extends layout
 
+block css
+  link(rel='stylesheet', href='/css/about.css')
+
 block content
   div.container
     div.row.section.animated.fadeInUp
@@ -7,7 +10,7 @@ block content
         h1= title.text
     div.row.section.animated.fadeInUp
       div.col-sm-12
-        div.row.article.light-bg
+        div.row.light-bg.article.animated.fadeInUp
           div.col-sm-4
             img.img-thumbnail.center-block.img-responsive(src='#{image}')
           div.col-sm-8
@@ -16,4 +19,4 @@ block content
                 if val.heading
                   h2.sidelines
                     span= val.heading
-                p= val.content
+                p!= val.content
