@@ -16,9 +16,7 @@
     "defaultSubject": "Hello",
     "smtpServer": "smtp.live.com",
     "smtpPort": "25",
-    "smtpUseSecure": "true",
-    "smtpUsername": "",
-    "smtpPassword": ""
+    "smtpUseSecure": "true"
   },
   "social": [
     {

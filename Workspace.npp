@@ -5,6 +5,7 @@
                 <File name="assets\js\main.js" />
             </Folder>
             <Folder name="css">
+                <File name="assets\css\about.css" />
                 <File name="assets\css\contact.css" />
                 <File name="assets\css\main.css" />
             </Folder>
