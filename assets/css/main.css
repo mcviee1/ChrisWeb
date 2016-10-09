@@ -63,6 +63,9 @@ input.form-control, textarea.form-control {
 .article.row {
     padding: 30px;
 }
+div.article-image {
+	max-width: 300px;
+}
 
 /* Header */
 .header .navbar {

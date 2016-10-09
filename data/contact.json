@@ -16,7 +16,7 @@
     "defaultSubject": "Hello",
     "smtpServer": "smtp.live.com",
     "smtpPort": "25",
-    "smtpUseSecure": "true"
+    "smtpUseSecure": "false"
   },
   "social": [
     {
@@ -28,10 +28,17 @@
     },
     { 
       "name": "Facebook",
-      "text": "ChristineEMcVie",
-      "href": "http://www.facebook.com/ChristineEMcVie",
+      "text": "Christine E McVie",
+      "href": "http://www.facebook.com/christineemcvie",
       "faImage": "fa-facebook",
       "color": "#4668B3"
+    },
+	{ 
+      "name": "Instagram",
+      "text": "@christineemcvie",
+      "href": "https://www.instagram.com/christineemcvie/",
+      "faImage": "fa-instagram",
+      "color": "#E6365F"
     }
   ]
 }

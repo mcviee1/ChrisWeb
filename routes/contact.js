@@ -11,7 +11,6 @@ var form = require("express-form"),
 // create reusable transport object using SMTP transport 
 var mailTransport = nodemailer.createTransport({
     name: 'christineemcvie.com',
-    //direct: true,
     debug: true,
     logger: true,
     host: data.email.smtpServer,
