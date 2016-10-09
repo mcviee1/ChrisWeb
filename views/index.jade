@@ -11,7 +11,7 @@ block content
         h1= title.text
         for val in news
           div.row.light-bg.article.animated.fadeInUp      
-            div.col-sm-3
+            div.col-sm-3.article-image
               if (val.image)
                 img.img-thumbnail.center-block.img-responsive(src='#{val.image}')
             div.col-sm-9
