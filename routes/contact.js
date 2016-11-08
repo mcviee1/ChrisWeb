@@ -10,17 +10,14 @@ var form = require("express-form"),
 
 // create reusable transport object using SMTP transport 
 var mailTransport = nodemailer.createTransport({
-    name: 'christineemcvie.com',
+    service: data.email.smtpService,
     debug: true,
     logger: true,
-    host: data.email.smtpServer,
-    port: data.email.smtpPort,
-    secure: data.email.smtpUseSecure,
     auth: {
         user: process.env.SMTP_USERNAME,
         pass: process.env.SMTP_PASSWORD
     }
-});
+  });
 
 /* GET Contact page. */
 router.get('/', function(req, res) {

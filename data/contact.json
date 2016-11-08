@@ -14,9 +14,7 @@
   "email": {
     "heading": "Send a Message",
     "defaultSubject": "Hello",
-    "smtpServer": "smtp.live.com",
-    "smtpPort": "25",
-    "smtpUseSecure": "false"
+    "smtpService": "Hotmail"
   },
   "social": [
     {
