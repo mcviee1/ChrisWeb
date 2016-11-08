@@ -1,5 +1,11 @@
 extends layout
 
+block script
+  script(async src='https://platform.twitter.com/widgets.js')
+
+block css
+  link(rel='stylesheet', href='/css/index.css')
+
 block content
   div.container
     div.row.section.animated.fadeInUp
@@ -9,13 +15,21 @@ block content
     div.row.section.animated.fadeInUp
       div.col-sm-12
         h1= title.text
-        for val in news
-          div.row.light-bg.article.animated.fadeInUp      
-            div.col-sm-3.article-image
-              if (val.image)
-                img.img-thumbnail.center-block.img-responsive(src='#{val.image}')
-            div.col-sm-9
-              h2.sidelines
-                span= val.heading
-              h4.subHeading= val.date
-              p!= val.content
+        div.row
+          div.col-sm-9
+            for val in news
+              div.row.light-bg.article.animated.fadeInUp      
+                div.col-sm-3.article-image
+                  if (val.image)
+                    img.img-thumbnail.center-block.img-responsive(src='#{val.image}')
+                div.col-sm-9
+                  h2.sidelines
+                    span= val.heading
+                  h4.subHeading= val.date
+                  p!= val.content
+          div.col-sm-3
+            div.article
+              div
+                a.twitter-timeline(href='https://twitter.com/CEMcvie' data-height='600' data-chrome='nofooter') Tweets by @CEMcVie
+              div.twitterFollowContainer
+                a.twitter-follow-button(href='https://twitter.com/CEMcvie' data-show-count='false') Follow @CEMcVie
